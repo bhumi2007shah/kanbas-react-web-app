@@ -1,49 +1,221 @@
-<table border="1" width="100%">
-    <tr>
-        <td valign="top"><ul>
-            <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-            <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-            <li><a href="/Kanbas/Calendar/Home/screen.html">Calendar</a></li>
-            <li><a href="/Kanbas/Inbox/Home/screen.html">Inbox</a></li>
-            <li><a href="/Kanbas/History/Home/screen.html">History</a></li>
-            <li><a href="/Kanbas/Studio/Home/screen.html">Studio</a></li>
-            <li><a href="/Kanbas/Commons/Home/screen.html">Commons</a></li>
-            <li><a href="/Kanbas/Help/Home/screen.html">Help</a></li>
-        </ul></td></td>
-        <td valign="top"><ul>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-            <li><a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
-            <li><a href="/Kanbas/Courses/Zoom Meetings/screen.html">Zoom Meetings</a></li>
-            <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-            <li><a href="/Kanbas/Courses/Quizzes/screen.html">Quizzes</a></li>
-            <li><a href="/Kanbas/Courses/Grade/screen.html">Grade</a></li>
-            <li><a href="/Kanbas/Courses/People/screen.html">People</a></li>
-            <li><a href="/Kanbas/Courses/Panopto Video/screen.html">Panopto</a></li>
-            <li><a href="/Kanbas/Courses/Discussions/screen.html">Discussions</a></li>
-            <li><a href="/Kanbas/Courses/Announcements/screen.html">Announcements</a></li>
-            <li><a href="/Kanbas/Courses/Pages/screen.html">Pages</a></li>
-            <li><a href="/Kanbas/Courses/Files/screen.html">Files</a></li>
-            <li><a href="/Kanbas/Courses/Rubrics/screen.html">Rubrics</a></li>
-            <li><a href="/Kanbas/Courses/Outcomes/screen.html">Outcomes</a></li>
-            <li><a href="/Kanbas/Courses/Collaborations/screen.html">Collaborations</a></li>
-            <li><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
-            <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-        </ul></td></td>
-        <td valign="top"><label for ="assignmentName">Assignment name </label><br/>
-            <input id="assignmentName" placehlder="assignment name"/><br/>
-            <h3>description</h3>
-            <textarea cols="50" rows="5">assignment 1 to build kanbas</textarea>
-            <h3>Points</h3>
-            <input value="100" type="number" max="100" min="10"/>
-            <h3>submission type</h3>
-            <input type="checkbox"/>text entry<br/>
-            <input type="checkbox"/> website url<br/>
-            <input type="checkbox"/> media recording<br/>
-            <input type="checkbox"/> file uploads<br/>
-            <h3>Due date</h3>
-            <input type="date" min="2023-09-04" max="2023-09-29"/>
-            </td>
-    </tr>
-</table>
+<html>
+    <head>
+      <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+             <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="../../../Account/accountnavigator/index.css" rel="stylesheet">
+    <link href="../../../KanbasNavigation/index.css" rel="stylesheet">
+
+    </head>
+    <body><div class="wd-flex-row-container">
+        <div class="row">
+        <!-- kanbas navigator -->
+              <div class="col-1  d-none d-md-block">
+                    <ul class="nav  sidebar">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Account/Profile/screen.html">
+                                <i class="fas fa-user fa-2x mb-2 text-white d-block"></i>
+                                <class="nav-link active>Account</class>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Dashboard/screen.html">
+                                <i class="fas fa-tachometer-alt fa-3x mb-2 text-red d-block"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Courses/screen.html">
+                                <i class="fas fa-book fa-3x mb-2 text-red d-block"></i>
+                                Courses
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Calendar/Home/screen.html">
+                                <i class="fas fa-calendar fa-3x mb-2 text-red d-block"></i>
+                                Calendar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Inbox/Home/screen.html">
+                                <i class="fas fa-inbox fa-3x mb-2 text-red d-block"></i>
+                                Inbox
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/History/Home/screen.html">
+                                <i class="fas fa-history fa-3x mb-2 text-red d-block"></i>
+                                History
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Studio/Home/screen.html">
+                                <i class="fas fa-paint-brush fa-3x mb-2 text-red d-block"></i>
+                                Studio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Commons/Home/screen.html">
+                                <i class="fas fa-cogs fa-3x mb-2 text-red d-block"></i>
+                                Commons
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Help/Home/screen.html">
+                                <i class="fas fa-question-circle fa-3x mb-2 text-red d-block"></i>
+                                Help
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+             <div class="col-11 d-none d-md-block">
+                <div class="row" style="padding-left:10px"><nav aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="background-color: white;">
+                      <li type="none" aria-current="page"><span style="color:black; " > CS4500>Assignments>Editor</span></Lecture></li>
+                    </ol>
+                  </nav></div>
+                <div class=" row">
+            <!-- course navigation -->
+            <div class="col-1  d-none d-md-block" style="padding: 0;">
+                <ul class="list-group sidebarAC">
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Zoom Meetings/screen.html">Zoom Meetings</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Quizzes/screen.html">Quizzes</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Grades/screen.html">Grade</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/People/screen.html">People</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Panopto Video/screen.html">Panopto</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Discussions/screen.html">Discussions</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Announcements/screen.html">Announcements</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Pages/screen.html">Pages</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Files/screen.html">Files</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Rubrics/screen.html">Rubrics</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Outcomes/screen.html">Outcomes</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Collaborations/screen.html">Collaborations</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+                </ul>
+                 </div><!-- home -->
+                 <div class="col-11">
+ <!-- Assignment Name -->
+ <div class="row mb-3">
+    <label for="assignmentName" class="col-form-label col-md-12">Assignment Name</label>
+    <div class="col-md-12">
+        <input id="assignmentName" class="form-control" style="width: 100%;" placeholder="Assignment name" />
+    </div>
+</div>
+
+<!-- Description -->
+<div class="mb-3">
+   
+    <textarea cols="50" rows="5" class="form-control">assignment 1 to build kanbas</textarea>
+</div>
+
+<!-- Points -->
+<div class="row mb-3">
+    <label class="col-form-label col-md-3" style="text-align: right;">Points</label>
+    <div class="col-md-7">
+        <input value="100" type="number" class="form-control" max="100" min="10"/>
+    </div>
+</div>
+
+<!-- Assignment Group -->
+<div class="row mb-3">
+    <label class="col-form-label col-md-3" style="text-align: right;">Assignment Group</label>
+    <div class="col-md-7">
+        <select class="form-control">
+            <option>assignments</option>
+        </select>
+    </div>
+</div>
+
+<!-- Display Grade As -->
+<div class="row mb-3">
+    <label class="col-form-label col-md-3" style="text-align: right;">Display Grade As</label>
+    <div class="col-md-7">
+        <select class="form-control">
+            <option>percentage</option>
+            <option>gpa</option>
+        </select>
+    </div>
+</div>
+
+<!-- Submission Type -->
+<div class="row mb-3">
+    <label class="col-form-label col-3" style="text-align: right;">Submission Type</label>
+    <div class="col-7">
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="textEntry">
+        <label class="form-check-label" for="textEntry">
+            Text Entry
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="websiteUrl">
+        <label class="form-check-label" for="websiteUrl">
+            Website URL
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="mediaRecording">
+        <label class="form-check-label" for="mediaRecording">
+            Media Recording
+        </label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="fileUploads">
+        <label class="form-check-label" for="fileUploads">
+            File Uploads
+        </label>
+    </div>
+</div>
+</div>
+
+
+<!-- Assign To -->
+<div class="row mb-3">
+    <label class="col-form-label col-md-3" style="text-align: right;">Assign To</label>
+    <div class="col-md-7">
+        <select class="form-control">
+            <option>everybody</option>
+        </select>
+    </div>
+</div>
+
+<!-- Due Date -->
+<div class="row mb-3">
+    <label class="col-form-label col-md-3" style="text-align: right;">Due Date</label>
+    <div class="col-md-7">
+        <span class="me-3 mt-3">Available From</span>
+        <input type="date" min="2023-09-04" />
+        <span class="me-3 mt-3">Until</span>
+        <input type="date" min="2023-09-29" />
+    </div>
+</div>
+
+<!-- Buttons -->
+<div class="row">
+<div class="d-flex justify-content-start mt-3" style="padding: 1cm;">
+    <a href="http://localhost:3000/Kanbas/Courses/Assignments/screen.html" class="btn" style="background-color: lightgray; border-color: black;" >Cancel</a>
+    
+</div>
+<div class="d-flex justify-content-start mt-3" style="padding: 1cm;">
+    <a href="http://localhost:3000/Kanbas/Courses/Assignments/screen.html" class="btn btn-success ms-2">Save</a>
+
+</div>
+</div>
+</div>
+
+                <!-- profile end -->
+         
+           
+            </div>
+            </div>
+        
+            
+     </body>
+    </html>

@@ -1,130 +1,405 @@
-<button>Import</button>
-<select>
-    <option>export</option>
-    <option> unpublish</option>
-</select>
-<button>Configure</button>
-<table width="100%">
-    <tr>
-        <td>student name<br/>
-            <input placeholder="search students"/>
-        </td>
-        <td>assignment names<br/>
-            <input placeholder="search assignments"/>
-        </td>
-    </tr>
-</table>
-<button>apply filters</button>
-<table width="100%" , border="1">
-    <thead>
-        <tr>
-        <th>student name</th>
-        <th>A1 setup</th>
-        <th>A2 HTML</th>
-        <th>A3 CSS</th>
-        <th>A4 PHP</th>
-        <th>A5 JS</th>
-        <th>A6 Node</th>
-        <th>A7 MOngo DB</th>
-        <th>Q1</th>
-        <th>Q2</th>
-        <th>Q3</th>
-        <th>Q4</th>
-        <th>Q5</th>
-        <th>Q6</th>
-        <th>Q7</th>
-        <th>Q8</th>
-        <th>exam 1</th>
-        <th>exam 2</th>
-        <th>exam 3</th>
-        <th>exam 4</th>
-        <th>exam 5</th>
-        <th>exam 6</th>
+<html>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" rel="stylesheet"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+       
+    </head>
+    <body>
+        
 
-        </tr>
-    </thead>
-     <tbody>
-        <tr>
-            <td>bhumi</td> 
-            <td>80%</td>  
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td>
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-             
+<div class="container mt-5" >
+    <div class="row" style="padding-left:10px"><nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="background-color: white;">
+          <li type="none" aria-current="page"><span style="color:black; " >CS 4550>Grades</span></Lecture></li>
+        </ol>
+      </nav></div>
+     
+      <div class="row" style="float: right;">
+        <button class="btn btn-sm  border border-1" style="height: 1cm; "><i class="fa-solid fa-file-import fa-sm" style="color: #030303;"></i>Import</button>
+    
+        <button class="btn btn-sm  border border-1" style="height: 1cm; "><i class="fa-solid fa-file-export" style="color: #000000;"></i>Export</button>
+        <!-- <select class="form-select" style="height: 1cm;">
+            <option><i class="fa-solid fa-file-export" style="color: #000000;"></i>Export</option>
+            <option>Unpublish</option>
+        </select> -->
+        <button class="btn  border border-1" style="height: 1cm;"><i class="fa-solid fa-gear" style="color: #000000;"></i></button>
+    </div>
+        <div class="row mt-3">
+            <div class="col">
+                <label for="searchStudents" class="form-label">Student Name</label>
+                <input type="text" class="form-control" id="searchStudents" placeholder="Search Students">
+            </div>
+            <div class="col">
+                <label for="searchAssignments" class="form-label">Assignment Names</label>
+                <input type="text" class="form-control" id="searchAssignments" placeholder="Search Assignments">
+            </div>
+        </div>
+    
+</div>
+    
 
-        </tr>
-        <tr>
-            <td>keya</td> 
-            <td>80%</td>  
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td>
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-             
-
-        </tr>
-        <tr>
-            <td>khushi</td> 
-            <td>80%</td>  
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td>
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-            <td>80%</td> 
-             
-
-        </tr>
-
-     </tbody>
-     <tfoot>
-
-     </tfoot>
-</table>
+    <div class="row" style="padding-left: 0.5cm;">
+    <button class="btn  border border-1">Apply Filters</button>
+    <div class="table-responsive mt-3">
+        <table class="table table-striped" width="100%" border="1">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>A1 Setup</th>
+                    <th>A2 HTML</th>
+                    <th>A3 CSS</th>
+                    <th>A4 PHP</th>
+                    <th>A5 JS</th>
+                    <th>A6 Node</th>
+                    <th>A7 MongoDB</th>
+                    <th>Q1</th>
+                    <th>Q2</th>
+                    <th>Q3</th>
+                    <th>Q4</th>
+                    <th>Q5</th>
+                    <th>Q6</th>
+                    <th>Q7</th>
+                    <th>Q8</th>
+                    <th>Exam 1</th>
+                    <th>Exam 2</th>
+                    <th>Exam 3</th>
+                    <th>Exam 4</th>
+                    <th>Exam 5</th>
+                   
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Bhumi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Keya</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Khushi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Bhumi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Bhumi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Bhumi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Bhumi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Bhumi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Bhumi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Bhumi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Bhumi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Bhumi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Bhumi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                <tr>
+                    <td>Bhumi</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                    <td>80%</td>
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                <!-- Optional footer content -->
+            </tfoot>
+        </table>
+    </div>
+</div>
+</div>
+</body>
+</html>

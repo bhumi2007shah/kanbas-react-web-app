@@ -1,49 +1,262 @@
-<h1>course details</h1>
-image <img src><br/>
-<b>Name: </b>CS4550 12631 Web Development SEC 01 Fall 2023<br/>
-<b>Course Code </b>CS4550.12631.202410<br/>
-<b>Blueprint Course</b> no<br/>
-<b>Course Template</b><input type="checkbox"/> enable course as course template<br/>
-<b>Timezone</b><select>
-    <option>Eastern Daylight time</option>
-    <option>Central Daylight time</option>
-    <option>Mountaiin Daylight time</option>
-    <option>Mountain Standard time</option>
-    <option>Pacific Daylight time</option>
-    <option>Alaska Daylight time</option>
-    <option>Hawaii Standard time</option>
-   
-</select><br/>
-<b>SIS ID</b>CS4550.12631.202410<br/>
-<b>Subaccount</b> CS undergrad<br/>
-<b>Term</b>202410_1 Fall Semester full term<br/>
-<b>Participation</b><select>
-    <option>Term</option>
-</select><br/>
-<b>Start</b><input type="date"><br/>
-<b>End</b><input type="date"><br/>
-<input type="checkbox"/>Restrict students from viewing course before term start date<br/>
-<input type="checkbox"/>Restrict students from viewing course before term start date<br/>
-<b>default due time</b><select>
-    <option>11:59 pm</option>
-    <option>9:00pm</option>
-</select><br/>
-<b>default language</b><select>
-    <option>English (US)</option>
-    <option>English(UK)</option>
-</select><br/>
-<b>File storage</b>10000 megabytes<br/>
-<b>Large course</b><input type="checkbox"/>launch speedgrader filtered by student group<br/>
-<b>Grading scheme</b><input type="checkbox"/>enable course grading scheme<br/>
-<b>Lisence</b><select>
-<option>Private</option>
-<option>Public</option>
-</select><br/>
-<b>File Copyright</b><input type="checkbox"/>copyright and lisence information must be provided<br/>
-<b>Visibility</b><br/>
-<b>Format</b><select>
-    <option>on campus</option>
-    <option>off campus</option>
-</select><br/>
-<b>mastery paths</b><input type="checkbox"/>enable indivisua learning paths for students  based on assignment<br/>
-<b>Description</b><textbox>           </textbox>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+        rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+               <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wd-flex-row-container">
+            <div class="container mt-5">
+                <a href="/Kanbas/Courses/Settings/coursedetails/screen.html" class="btn  btn-outline-dark">Course Details</a>
+                <a href="/Kanbas/Courses/Settings/screen.html" class="btn text-danger" style="background-color: white; ">Selections</a>
+                <a href="/Kanbas/Courses/Settings/navigation/screen.html" class="btn  text-danger" style="background-color: white; ">Navigation</a>
+                <a href="/Kanbas/Courses/Settings/screen.html" class="btn  text-danger" style="background-color: white; ">Apps</a>
+                <a href="/Kanbas/Courses/Settings/screen.html" class="btn  text-danger" style="background-color: white; ">Feature Options</a>
+                <a href="/Kanbas/Courses/Settings/screen.html" class="btn  text-danger" style="background-color: white; ">Integrations</a>
+            </div>
+            
+            
+        
+        <div class="container mt-5">
+            <h1 class="mb-3">Course Details</h1>
+        
+            <div class="row mb-3">
+                <div class="col-md-3 text-end"><strong>Image</strong></div>
+                <div class="col-md-7"><img src="../../../../iMAGE/photo-1575936123452-b67c3203c357.jpeg" class="img-fluid" style="max-width: 400px; max-height: 400px;"></div>
+            </div>
+        
+            <!-- Name -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Name:</strong></label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" value="CS4550 12631 Web Development SEC 01 Fall 2023">
+                </div>
+            </div>
+        
+            <!-- Course Code -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Course Code</strong></label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" value="CS4550.12631.202410">
+                </div>
+            </div>
+        
+            <!-- Blueprint Course -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Blueprint Course</strong></label>
+                <div class="col-md-7">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Course Template -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Course Template</strong></label>
+                <div class="col-md-7">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Timezone -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Timezone</strong></label>
+                <div class="col-md-7">
+                    <select class="form-select">
+                        <option>Eastern Daylight time</option>
+                        <option>Central Daylight time</option>
+                        <option>Mountain Daylight time</option>
+                        <option>Mountain Standard time</option>
+                        <option>Pacific Daylight time</option>
+                        <option>Alaska Daylight time</option>
+                        <option>Hawaii Standard time</option>
+                    </select>
+                </div>
+            </div>
+        
+            <!-- SIS ID -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>SIS ID</strong></label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" value="CS4550.12631.202410">
+                </div>
+            </div>
+        
+            <!-- Subaccount -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Subaccount</strong></label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" value="CS undergrad">
+                </div>
+            </div>
+        
+            <!-- Term -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Term</strong></label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" value="202410_1 Fall Semester full term">
+                </div>
+            </div>
+        
+            <!-- Participation -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Participation</strong></label>
+                <div class="col-md-7">
+                    <select class="form-select">
+                        <option>Term</option>
+                    </select>
+                </div>
+            </div>
+        
+            <!-- Start -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Start</strong></label>
+                <div class="col-md-7">
+                    <input type="date" class="form-control">
+                </div>
+            </div>
+        
+            <!-- End -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>End</strong></label>
+                <div class="col-md-7">
+                    <input type="date" class="form-control">
+                </div>
+            </div>
+        
+            <!-- Restrict View Start Date -->
+            <div class="row mb-3">
+                <div class="col-md-3"></div>
+                <div class="col-md-7 form-check">
+                    <input class="form-check-input" type="checkbox" id="restrictViewBeforeStart">
+                    <label class="form-check-label" for="restrictViewBeforeStart">Restrict students from viewing course before term start date</label>
+                </div>
+            </div>
+        
+            <!-- Restrict View End Date -->
+            <div class="row mb-3">
+                <div class="col-md-3"></div>
+                <div class="col-md-7 form-check">
+                    <input class="form-check-input" type="checkbox" id="restrictViewBeforeEnd">
+                    <label class="form-check-label" for="restrictViewBeforeEnd">Restrict students from viewing course before term end date</label>
+                </div>
+            </div>
+        
+            <!-- Default Due Time -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Default Due Time</strong></label>
+                <div class="col-md-7">
+                    <select class="form-select">
+                        <option>11:59 pm</option>
+                        <option>9:00 pm</option>
+                    </select>
+                </div>
+            </div>
+        
+            <!-- Default Language -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Default Language</strong></label>
+                <div class="col-md-7">
+                    <select class="form-select">
+                        <option>English (US)</option>
+                        <option>English (UK)</option>
+                    </select>
+                </div>
+            </div>
+        
+            <!-- File Storage -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>File Storage</strong></label>
+                <div class="col-md-7">
+                    <input type="text" class="form-control" value="10000 megabytes">
+                </div>
+            </div>
+        
+            <!-- Large Course -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Large Course</strong></label>
+                <div class="col-md-7">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="largeCourse">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Grading Scheme -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Grading Scheme</strong></label>
+                <div class="col-md-7">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gradingScheme">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- License -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>License</strong></label>
+                <div class="col-md-7">
+                    <select class="form-select">
+                        <option>Private</option>
+                        <option>Public</option>
+                    </select>
+                </div>
+            </div>
+        
+            <!-- File Copyright -->
+            <div class="row mb-3">
+                <div class="col-md-3"></div>
+                <div class="col-md-7 form-check">
+                    <input class="form-check-input" type="checkbox" id="fileCopyright">
+                    <label class="form-check-label" for="fileCopyright">Copyright and license information must be provided</label>
+                </div>
+            </div>
+        
+            <!-- Visibility -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Visibility</strong></label>
+                <div class="col-md-7"></div>
+            </div>
+        
+            <!-- Format -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Format</strong></label>
+                <div class="col-md-7">
+                    <select class="form-select">
+                        <option>On Campus</option>
+                        <option>Off Campus</option>
+                    </select>
+                </div>
+            </div>
+        
+            <!-- Mastery Paths -->
+            <div class="row mb-3">
+                <div class="col-md-3"></div>
+                <div class="col-md-7 form-check">
+                    <input class="form-check-input" type="checkbox" id="masteryPaths">
+                    <label class="form-check-label" for="masteryPaths">Enable individual learning paths for students based on assignment</label>
+                </div>
+            </div>
+        
+            <!-- Description -->
+            <div class="row mb-3">
+                <label class="col-form-label col-md-3 text-end"><strong>Description</strong></label>
+                <div class="col-md-7">
+                    <textarea class="form-control" rows="5"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    </body>
+</html>
+
+
+
+
+
+

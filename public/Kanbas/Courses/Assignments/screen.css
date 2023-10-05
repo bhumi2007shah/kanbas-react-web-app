@@ -1,0 +1,22 @@
+.wd-text-endAss{
+    text-align:right;
+}
+.wd-Asscolorbg{
+    background-color: light grey;
+
+}
+.wd-Asscolorbg1{
+    background-color: red;
+
+}
+.wd-Asslist-stlye{
+    list-style: none;
+}
+.wd-Assign{
+    border:0.1cm;
+    border-color: solid black;
+    border-width: 0.1cm;
+}
+.wd-Asspad{
+    padding: 0.2cm;
+}

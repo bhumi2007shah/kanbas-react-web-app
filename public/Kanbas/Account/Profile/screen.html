@@ -1,36 +1,149 @@
-<table border="2" width="100%">
-    <tr>
-        <td>
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="/Kanbas/Calendar/Home/screen.html">Calendar</a></li>
-                <li><a href="/Kanbas/Inbox/Home/screen.html">Inbox</a></li>
-                <li><a href="/Kanbas/History/Home/screen.html">History</a></li>
-                <li><a href="/Kanbas/Studio/Home/screen.html">Studio</a></li>
-                <li><a href="/Kanbas/Commons/Home/screen.html">Commons</a></li>
-                <li><a href="/Kanbas/Help/Home/screen.html">Help</a></li>
-            </ul></td>
-        
-        <td>
-            <ul>
-                <li><a href="#">Notifications</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">ePortfolios</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Shared content</a></li>
-                <li><a href="#">The Hub</a></li>
-                <li><a href="#">Qwickly course tools</a></li>
-                <li><a href="#">Global announcements</a></li>
-            </ul></td>
-        <td><h1>profile</h1>
-            <h2>bhumi</h2>
-            <form action="/Kanbas/Account/Profile/editprofile/screen.html">
-            <button>edit profile</button>
-            </form>
-        </td>
-    </tr>
-</table>
+<html><head>
+    <!-- <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>User Profile</title>
+    
+
+
+ <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+ <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+<!-- css -->
+ <link href="screen.css" rel="stylesheet">
+ 
+<!-- acc nav -->
+ <link rel="stylesheet" href="../accountnavigator/index.css"> 
+
+
+    <!-- kanbas nav -->
+
+ <link rel="stylesheet" href="../../KanbasNavigation/index.css">
+ 
+
+   
+</head>
+<body>
+
+<div class="wd-flex-row-container">
+    <div class="row">
+    <!-- kanbas navigator -->
+          <div class="col-1  d-none d-md-block">
+                <ul class="nav  sidebar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kanbas/Account/Profile/screen.html">
+                            <i class="fas fa-user fa-2x mb-2 text-white d-block"></i>
+                            <class="nav-link active>Account</class>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kanbas/Dashboard/screen.html">
+                            <i class="fas fa-tachometer-alt fa-3x mb-2 text-red d-block"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kanbas/Courses/screen.html">
+                            <i class="fas fa-book fa-3x mb-2 text-red d-block"></i>
+                            Courses
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kanbas/Calendar/Home/screen.html">
+                            <i class="fas fa-calendar fa-3x mb-2 text-red d-block"></i>
+                            Calendar
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kanbas/Inbox/Home/screen.html">
+                            <i class="fas fa-inbox fa-3x mb-2 text-red d-block"></i>
+                            Inbox
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kanbas/History/Home/screen.html">
+                            <i class="fas fa-history fa-3x mb-2 text-red d-block"></i>
+                            History
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kanbas/Studio/Home/screen.html">
+                            <i class="fas fa-paint-brush fa-3x mb-2 text-red d-block"></i>
+                            Studio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kanbas/Commons/Home/screen.html">
+                            <i class="fas fa-cogs fa-3x mb-2 text-red d-block"></i>
+                            Commons
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Kanbas/Help/Home/screen.html">
+                            <i class="fas fa-question-circle fa-3x mb-2 text-red d-block"></i>
+                            Help
+                        </a>
+                    </li>
+                </ul>
+            </div>
+         <div class="col-11 d-none d-md-block">
+            <div class="row" style="padding-left:10px"><nav aria-label="breadcrumb">
+                <ol class="breadcrumb" style="background-color: white;">
+                  <li type="none" aria-current="page"><span style="color:black; " >Bhumi Shah's profile</span></Lecture></li>
+                </ol>
+              </nav></div>
+            <div class="container row">
+        <!-- account navigation -->
+         <div class="col-2  d-none d-md-block" style="padding: 0;">
+        <ul class="list-group sidebarAC">
+            <li class="list-group-item"><a href="#">Notifications</a></li>
+            <li class="list-group-item active"><a href="/public/Kanbas/Account/Profile/screen.html">Profile</a></li>
+            <li class="list-group-item"><a href="#">Files</a></li>
+            <li class="list-group-item"><a href="#">Settings</a></li>
+            <li class="list-group-item"><a href="#">ePortfolios</a></li>
+            <li class="list-group-item"><a href="#">History</a></li>
+            <li class="list-group-item"><a href="#">Shared </br>content</a></li>
+            <li class="list-group-item"><a href="#">The Hub</a></li>
+            <li class="list-group-item"><a href="#">Qwickly </br>course tools</a></li>
+            <li class="list-group-item"><a href="#">Global </br>announcements</a></li>
+        </ul>
+    </div><!-- profile -->
+                <div class="col-8">
+                    <div class="row ">
+                        <div class="col-10 wd-Prow">
+                            <i class="fas fa-user-circle fa-10x mb-2  "></i>
+                            <h5 class="mt-3 mb-5">Bhumi shah</h5>
+                            <section>
+                                <h4 class="mt-3">Contact</h4>
+                                <p>Email: example@example.com</p>
+                                <p>Phone: (123) 456-7890</p>
+                            </section>
+                            <section>
+                                <h4>Biography</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                                    labore et dolore magna aliqua.</p>
+                            </section>
+                            <section>
+                                <h4>Links</h4>
+                                <p>
+                                    <a href="https://www.youtube.com/channel/your_channel" target="_blank">YouTube Channel</a>
+                                </p>
+                            </section>
+                        </div>
+                        <div class="col-2 text-right">
+                            <a href="/Kanbas/Account/Profile/editprofile/screen.html" class="btn btn-danger">
+                                <i class="fas fa-pencil-alt"></i> Edit Profile
+                            </a>
+                        
+                        </div>
+                    </div>
+
+            </div>
+     
+        </div>
+        </div>
+        </div>
+    </div>
+ </body>
+</html>
+
+       

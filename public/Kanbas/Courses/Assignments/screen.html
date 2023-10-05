@@ -1,93 +1,242 @@
-<table border="1" width="100%">
-    <tr>
-        <td>
-            <ul>
-                <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-                <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-                <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-                <li><a href="/Kanbas/Calendar/Home/screen.html">Calendar</a></li>
-                <li><a href="/Kanbas/Inbox/Home/screen.html">Inbox</a></li>
-                <li><a href="/Kanbas/History/Home/screen.html">History</a></li>
-                <li><a href="/Kanbas/Studio/Home/screen.html">Studio</a></li>
-                <li><a href="/Kanbas/Commons/Home/screen.html">Commons</a></li>
-                <li><a href="/Kanbas/Help/Home/screen.html">Help</a></li>
-            </ul></td>
-        <td><ul>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-            <li><a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
-            <li><a href="/Kanbas/Courses/Zoom Meetings/screen.html">Zoom Meetings</a></li>
-            <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-            <li><a href="/Kanbas/Courses/Quizzes/screen.html">Quizzes</a></li>
-            <li><a href="/Kanbas/Courses/Grade/screen.html">Grade</a></li>
-            <li><a href="/Kanbas/Courses/People/screen.html">People</a></li>
-            <li><a href="/Kanbas/Courses/Panopto Video/screen.html">Panopto</a></li>
-            <li><a href="/Kanbas/Courses/Discussions/screen.html">Discussions</a></li>
-            <li><a href="/Kanbas/Courses/Announcements/screen.html">Announcements</a></li>
-            <li><a href="/Kanbas/Courses/Pages/screen.html">Pages</a></li>
-            <li><a href="/Kanbas/Courses/Files/screen.html">Files</a></li>
-            <li><a href="/Kanbas/Courses/Rubrics/screen.html">Rubrics</a></li>
-            <li><a href="/Kanbas/Courses/Outcomes/screen.html">Outcomes</a></li>
-            <li><a href="/Kanbas/Courses/Collaborations/screen.html">Collaborations</a></li>
-            <li><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
-            <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-        </ul></td>
-        <td><input type="text" placeholder="search for assignments"/>
-<button>group</button>
-<button>Assignment</button>
-<select>
-    <option>edit assignment grades</option>
-</select>
-<br/>
-<h2>Assignments 40% of total grade 
-<select>
-    <option>edit</option>
-</select>
-</h2>
-<a href="http://localhost:3000/Kanbas/Courses/Assignments/assignmenteditor/screen.html">Assignment1- ENV+ HTML</a><br/>
-<a href="#">multiple modules</a><br/>
-<a href="http://localhost:3000/Kanbas/Courses/Assignments/assignmenteditor/screen.html">Assignment2- CSS+ BOOTSTRAP</a><br/>
-<a href="#">multiple modules</a><br/>
-<a href="http://localhost:3000/Kanbas/Courses/Assignments/assignmenteditor/screen.html">Assignment3- JS+ REACT</a><br/>
-<a href="#">multiple modules</a><br/>
-<a href="http://localhost:3000/Kanbas/Courses/Assignments/assignmenteditor/screen.html">Assignment4- STATE+ REDUX</a><br/>
-<a href="#">multiple modules</a><br/>
-<a href="http://localhost:3000/Kanbas/Courses/Assignments/assignmenteditor/screen.html">Assignment5- NODE+ SESSION</a><br/>
-<a href="#">multiple modules</a><br/>
-<a href="http://localhost:3000/Kanbas/Courses/Assignments/assignmenteditor/screen.html">Assignment6- MONGO+ MONGOOSE</a><br/>
-<a href="#">multiple modules</a><br/>
-<h2>Quizzes 10% of total grade
-    <select>
-        <option>edit</option>
-    </select>
-</h2>
-<a href="#">Quiz 1- HTML</a><br/>
-<a href="#">multiple modules</a><br/>
-<a href="#">Quiz 2- CSS</a><br/>
-<a href="#">multiple modules</a><br/>
-<a href="#">Quiz 3- JS ES6/a><br/>
-<a href="#">multiple modules</a><br/>
-<a href="#">Quiz 4- NODE</a><br/>
-<a href="#">multiple modules</a><br/>
-<a href="#">Quiz 5- MONGO</a><br/>
-<a href="#">multiple modules</a><br/>
-<h2>Exams 20% of total grade
-    <select>
-        <option>edit</option>
-    </select>
-</h2>
-<a href="#">Midterm</a><br/>
-<a href="#">multiple modules</a><br/>
-<a href="#">Finals</a><br/>
-<a href="#">multiple modules</a><br/>
-<h2>Project 30% of your grade
-    <select>
-        <option>edit</option>
-    </select>
-</h2>
-<a href="#">Project</a><br/>
-<a href="#">multiple modules</a><br/>
-</td>
-</tr>
+<html>
+    <head>
+      <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+             <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="../../Account/accountnavigator/index.css" rel="stylesheet">
+    <link href="../../KanbasNavigation/index.css" rel="stylesheet">
+    <link href="../Assignments/screen.css" rel="stylesheet">
 
-</table>
+    </head>
+    <body><div class="wd-flex-row-container">
+        <div class="row">
+        <!-- kanbas navigator -->
+              <div class="col-1  d-none d-md-block">
+                    <ul class="nav  sidebar">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Account/Profile/screen.html">
+                                <i class="fas fa-user fa-2x mb-2 text-white d-block"></i>
+                                <class="nav-link active>Account</class>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Dashboard/screen.html">
+                                <i class="fas fa-tachometer-alt fa-3x mb-2 text-red d-block"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Courses/screen.html">
+                                <i class="fas fa-book fa-3x mb-2 text-red d-block"></i>
+                                Courses
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Calendar/Home/screen.html">
+                                <i class="fas fa-calendar fa-3x mb-2 text-red d-block"></i>
+                                Calendar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Inbox/Home/screen.html">
+                                <i class="fas fa-inbox fa-3x mb-2 text-red d-block"></i>
+                                Inbox
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/History/Home/screen.html">
+                                <i class="fas fa-history fa-3x mb-2 text-red d-block"></i>
+                                History
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Studio/Home/screen.html">
+                                <i class="fas fa-paint-brush fa-3x mb-2 text-red d-block"></i>
+                                Studio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Commons/Home/screen.html">
+                                <i class="fas fa-cogs fa-3x mb-2 text-red d-block"></i>
+                                Commons
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Help/Home/screen.html">
+                                <i class="fas fa-question-circle fa-3x mb-2 text-red d-block"></i>
+                                Help
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+             <div class="col-11 d-none d-md-block">
+                <div class="row" style="padding-left:10px"><nav aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="background-color: white;">
+                      <li type="none" aria-current="page"><span style="color:black; " > CS4500>Assignments</span></Lecture></li>
+                    </ol>
+                  </nav></div>
+                <div class=" row">
+            <!-- course navigation -->
+            <div class="col-1  d-none d-md-block" style="padding: 0;">
+                <ul class="list-group sidebarAC">
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Zoom Meetings/screen.html">Zoom Meetings</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Quizzes/screen.html">Quizzes</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Grades/screen.html">Grade</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/People/screen.html">People</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Panopto Video/screen.html">Panopto</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Discussions/screen.html">Discussions</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Announcements/screen.html">Announcements</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Pages/screen.html">Pages</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Files/screen.html">Files</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Rubrics/screen.html">Rubrics</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Outcomes/screen.html">Outcomes</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Collaborations/screen.html">Collaborations</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+                </ul>
+                 </div><!-- home -->
+                 <div class="col-11">
+ <!-- Assignment Name -->
+ <div class="row">
+                    <div class="col-md-11 ">
+                        <div class="wd-text-endAss">
+                            <input type="text" placeholder="search for assignments"/>
+                        <button type="button" class="btn btn-sm wd-Asscolorbg">+Group</button>
+                        <button type="button" class="btn btn-sm wd-Asscolorbg1">Assignment</button>
+                        <hr style="margin:0%"/>
+                    </div>
+                    <div >
+                        <li class="list-group-item wd-Asscolorbg wd-Asslist-stlye" style=" font-size: larger; padding: 0%; background-color: lightgray;">Assignments <span style="text-align: right;"> 40% of total grade</span></li>
+                        
+                        <hr style="margin:0%"/>
+                    <ul style="padding:0" class="wd-Asslist-stlye">
+                        <li class="align-items-start">
+                            <div class="ms-2 me-auto">
+                              <div class="fw-bold">
+                                <span style="color:black"><i class="fa-solid fa-file wd-Asspad fa-2x" style="color: #2caf35;"></i><a href="./assignmenteditor/screen.html">Assignment1- ENV+ HTML</a></span></div>
+                                <span style="color: gray; font-size: small; margin-left: 1cm;">Week 0-Setup</span><span style="float: right;"><i class="fas fa-check-circle fa-lg" style="color: #30db24;"></i><i class="fa-solid fa-ellipsis-vertical" style="color: #bababa; padding-right: 1cm; padding-left: 5px;"></i></span></br>
+                              <span style="color: gray; font-size: small; margin-left: 1cm;">Due September 18, 2022 at 11:59pm</span>
+                            </div>
+                            </li><hr />
+                       <li class="align-items-start">
+                                <div class="ms-2 me-auto">
+                                  <div class="fw-bold">
+                                    <span style="color:black"><i class="fa-solid fa-file wd-Asspad fa-2x" style="color: #2caf35;"></i><a href="./assignmenteditor/screen.html">Assignment2- CSS+ BOOTSTRAP</a></span></div>
+                                  <span style="color: gray; font-size: small; margin-left: 1cm;">Week 1-HTML</span><span style="float: right;"><i class="fas fa-check-circle fa-lg" style="color: #30db24;"></i><i class="fa-solid fa-ellipsis-vertical" style="color: #bababa; padding-right: 1cm; padding-left: 5px;"></i></span></br>
+                                  <span style="color: gray; font-size: small; margin-left: 1cm;">Due September 25, 2022 at 11:59pm</span>
+                                </div>
+                                </li><hr />
+                       <li class="align-items-start">
+                                    <div class="ms-2 me-auto">
+                                      <div class="fw-bold">
+                                        <span style="color:black"><i class="fa-solid fa-file wd-Asspad fa-2x" style="color: #2caf35;"></i><a href="./assignmenteditor/screen.html">Assignment3- JS+ REACT</a></span></div>
+                                      <span style="color: gray; font-size: small; margin-left: 1cm;">Week 2-CSS</span><span style="float: right;"><i class="fas fa-check-circle fa-lg" style="color: #30db24;"></i><i class="fa-solid fa-ellipsis-vertical" style="color: #bababa; padding-right: 1cm; padding-left: 5px;"></i></span></br>
+                                        <span style="color: gray; font-size: small; margin-left: 1cm;">Due October 2, 2022 at 11:59pm</span>
+                                    </div>
+                                    </li><hr />
+                      <li class="align-items-start">
+                                        <div class="ms-2 me-auto">
+                                          <div class="fw-bold">
+                                            <span style="color:black"><i class="fa-solid fa-file wd-Asspad fa-2x" style="color: #2caf35;"></i><a href="./assignmenteditor/screen.html">Assignment4- STATE+ REDUX</a></span></div>
+                                          <span style="color: gray; font-size: small; margin-left: 1cm;">Week 3-Bootsrap</span><span style="float: right;"><i class="fas fa-check-circle fa-lg" style="color: #30db24;"></i><i class="fa-solid fa-ellipsis-vertical" style="color: #bababa; padding-right: 1cm; padding-left: 5px;"></i></span></br>
+                                            <span style="color: gray; font-size: small; margin-left: 1cm;">Due October 10, 2022 at 11:59pm</span>
+                                        </div>
+                                        </li><hr />
+                            <li class="align-items-start">
+                                            <div class="ms-2 me-auto">
+                                              <div class="fw-bold">
+                                                <span style="color:black"><i class="fa-solid fa-file wd-Asspad fa-2x" style="color: #2caf35;"></i><a href="./assignmenteditor/screen.html">Assignment5- NODE+ SESSION</a></span></div>
+                                              <span style="color: gray; font-size: small; margin-left: 1cm;">Week 4-JavaScript</span><span style="float: right;"><i class="fas fa-check-circle fa-lg" style="color: #30db24;"></i><i class="fa-solid fa-ellipsis-vertical" style="color: #bababa; padding-right: 1cm; padding-left: 5px;"></i></span></br>
+                                                <span style="color: gray; font-size: small; margin-left: 1cm;">Due October 16, 2022 at 11:59pm</span>
+                                            </div>
+                                            </li><hr />
+                            <li class="align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                  <div class="fw-bold">
+                                                    <span style="color:black"><i class="fa-solid fa-file wd-Asspad fa-2x" style="color: #2caf35;"></i><a href="./assignmenteditor/screen.html">Assignment6- MONGO+ MONGOOSE</a></span></div>
+                                                  <span style="color: gray; font-size: small; margin-left: 1cm;">Week 5-React</span><span style="float: right;"><i class="fas fa-check-circle fa-lg" style="color: #30db24;"></i><i class="fa-solid fa-ellipsis-vertical" style="color: #bababa; padding-right: 1cm; padding-left: 5px;"></i></span></br>
+                                                    <span style="color: gray; font-size: small; margin-left: 1cm;">Due October 23, 2022 at 11:59pm</span>
+                                                </div>
+                                                </li><hr />
+                         <li class="list-group-item wd-Asscolorbg wd-Asslist-stlye" style=" font-size: larger; padding: 0%; background-color: lightgray;">Quiz <span style="text-align: right;"> 10% of total grade</span></li>
+
+                         <li class="align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                  <div class="fw-bold">
+                                                    <span style="color:black"><a href="#">Quiz 1- HTML</a></span></div>
+                                                    <span style="color: gray; font-size: small; margin-left: 1cm;">Due September 18, 2022 at 11:59pm</span>
+                                                </div>
+                                                </li><hr />
+                         <li class="align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                  <div class="fw-bold">
+                                                    <span style="color:black"><a href="#">Quiz 2- CSS</a></span></div>
+                                                    <span style="color: gray; font-size: small; margin-left: 1cm;">Due September 26, 2022 at 11:59pm</span>
+                                                </div>
+                                                </li><hr />
+                         <li class="align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                  <div class="fw-bold">
+                                                    <span style="color:black"><a href="#">Quiz 3- JS ES6</a></span></div>
+                                                    <span style="color: gray; font-size: small; margin-left: 1cm;">Due October 3, 2022 at 11:59pm</span>
+                                                </div>
+                                                </li><hr />
+                         <li class="align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                  <div class="fw-bold">
+                                                    <span style="color:black"><a href="#">Quiz 4- NODE</a></span></div>
+                                                    <span style="color: gray; font-size: small; margin-left: 1cm;">Due October 10, 2022 at 11:59pm</span>
+                                                </div>
+                                                </li><hr /> 
+                         <li class="align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                  <div class="fw-bold">
+                                                    <span style="color:black"><a href="#">Quiz 5- MONGO</a></span></div>
+                                                    <span style="color: gray; font-size: small; margin-left: 1cm;">Due October 23, 2022 at 11:59pm</span>
+                                                </div>
+                                                </li><hr />   
+                         <li class="list-group-item wd-Asscolorbg wd-Asslist-stlye" style=" font-size: larger; padding: 0%; background-color: lightgray;">Exmas <span style="text-align: right;"> 20% of total grade</span></li>
+
+                         <li class="align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                  <div class="fw-bold">
+                                                    <span style="color:black"><a href="#">Midterm</a></span></div>
+                                                    <span style="color: gray; font-size: small; margin-left: 1cm;">Due October 21, 2022 at 11:59pm</span>
+                                                </div>
+                                                </li><hr />
+                         <li class="align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                  <div class="fw-bold">
+                                                    <span style="color:black"><a href="#">Final</a></span></div>
+                                                    <span style="color: gray; font-size: small; margin-left: 1cm;">Due December 14, 2022 at 11:59pm</span>
+                                                </div>
+                                                </li><hr />  
+                        <li class="list-group-item wd-Asscolorbg wd-Asslist-stlye" style=" font-size: larger; padding: 0%; background-color: lightgray;">Project <span style="text-align: right;"> 30% of total grade</span></li>
+
+                         <li class="align-items-start">
+                                                <div class="ms-2 me-auto">
+                                                  <div class="fw-bold">
+                                                    <span style="color:black"><a href="#">Project</a></span></div>
+                                                    <span style="color: gray; font-size: small; margin-left: 1cm;">Due December 10, 2022 at 11:59pm</span>
+                                                </div>
+                                                </li><hr />                   
+                                                                                             
+                    </ul>
+                </div>
+</div></div>
+         
+           
+            </div>
+            </div>
+        
+            
+     </body>
+    </html>
+       
+       

@@ -1,79 +1,182 @@
-<table border="2" width="100%">
-    <tr>
-        <td><ul>
-            <li><a href="/Kanbas/Account/Profile/screen.html">Account</a></li>
-            <li><a href="/Kanbas/Dashboard/screen.html">Dashboard</a></li>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Courses</a></li>
-            <li><a href="/Kanbas/Calendar/Home/screen.html">Calendar</a></li>
-            <li><a href="/Kanbas/Inbox/Home/screen.html">Inbox</a></li>
-            <li><a href="/Kanbas/History/Home/screen.html">History</a></li>
-            <li><a href="/Kanbas/Studio/Home/screen.html">Studio</a></li>
-            <li><a href="/Kanbas/Commons/Home/screen.html">Commons</a></li>
-            <li><a href="/Kanbas/Help/Home/screen.html">Help</a></li>
-        </ul></td>
-        <td><ul>
-            <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
-            <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
-            <li><a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
-            <li><a href="/Kanbas/Courses/Zoom Meetings/screen.html">Zoom Meetings</a></li>
-            <li><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
-            <li><a href="/Kanbas/Courses/Quizzes/screen.html">Quizzes</a></li>
-            <li><a href="/Kanbas/Courses/Grade/screen.html">Grade</a></li>
-            <li><a href="/Kanbas/Courses/People/screen.html">People</a></li>
-            <li><a href="/Kanbas/Courses/Panopto Video/screen.html">Panopto</a></li>
-            <li><a href="/Kanbas/Courses/Discussions/screen.html">Discussions</a></li>
-            <li><a href="/Kanbas/Courses/Announcements/screen.html">Announcements</a></li>
-            <li><a href="/Kanbas/Courses/Pages/screen.html">Pages</a></li>
-            <li><a href="/Kanbas/Courses/Files/screen.html">Files</a></li>
-            <li><a href="/Kanbas/Courses/Rubrics/screen.html">Rubrics</a></li>
-            <li><a href="/Kanbas/Courses/Outcomes/screen.html">Outcomes</a></li>
-            <li><a href="/Kanbas/Courses/Collaborations/screen.html">Collaborations</a></li>
-            <li><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
-            <li><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
-        </ul></td>
-        <td>
+<html>
+    <head>
+      <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+             <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="../../../Account/accountnavigator/index.css" rel="stylesheet">
+    <link href="../../../KanbasNavigation/index.css" rel="stylesheet">
+    
+    </head>
+    <body><div class="wd-flex-row-container">
+        <div class="row">
+        <!-- kanbas navigator -->
+              <div class="col-1  d-none d-md-block">
+                    <ul class="nav  sidebar">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Account/Profile/screen.html">
+                                <i class="fas fa-user fa-2x mb-2 text-white d-block"></i>
+                                <class="nav-link active>Account</class>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Dashboard/screen.html">
+                                <i class="fas fa-tachometer-alt fa-3x mb-2 text-red d-block"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Courses/screen.html">
+                                <i class="fas fa-book fa-3x mb-2 text-red d-block"></i>
+                                Courses
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Calendar/Home/screen.html">
+                                <i class="fas fa-calendar fa-3x mb-2 text-red d-block"></i>
+                                Calendar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Inbox/Home/screen.html">
+                                <i class="fas fa-inbox fa-3x mb-2 text-red d-block"></i>
+                                Inbox
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/History/Home/screen.html">
+                                <i class="fas fa-history fa-3x mb-2 text-red d-block"></i>
+                                History
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Studio/Home/screen.html">
+                                <i class="fas fa-paint-brush fa-3x mb-2 text-red d-block"></i>
+                                Studio
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Commons/Home/screen.html">
+                                <i class="fas fa-cogs fa-3x mb-2 text-red d-block"></i>
+                                Commons
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Kanbas/Help/Home/screen.html">
+                                <i class="fas fa-question-circle fa-3x mb-2 text-red d-block"></i>
+                                Help
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+             <div class="col-11 d-none d-md-block">
+                <div class="row" style="padding-left:10px"><nav aria-label="breadcrumb">
+                    <ol class="breadcrumb" style="background-color: white;">
+                      <li type="none" aria-current="page"><span style="color:black; " >CS 4500>Grades</span></Lecture></li>
+                    </ol>
+                  </nav></div>
+                <div class=" row">
+            <!-- course navigation -->
+            <div class="col-1  d-none d-md-block" style="padding: 0;">
+                <ul class="list-group sidebarAC">
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Piazza/screen.html">Piazza</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Zoom Meetings/screen.html">Zoom Meetings</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Assignments/screen.html">Assignments</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Quizzes/screen.html">Quizzes</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Grades/screen.html">Grade</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/People/screen.html">People</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Panopto Video/screen.html">Panopto</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Discussions/screen.html">Discussions</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Announcements/screen.html">Announcements</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Pages/screen.html">Pages</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Files/screen.html">Files</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Rubrics/screen.html">Rubrics</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Outcomes/screen.html">Outcomes</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Collaborations/screen.html">Collaborations</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Syllabus/screen.html">Syllabus</a></li>
+                    <li class="list-group-item" style="border-radius: 0%; padding: 0%; margin: 0%;"><a href="/Kanbas/Courses/Settings/screen.html">Settings</a></li>
+                </ul>
+                 </div><!-- home -->
+                 <div class="col-11">
+                    <div class="wd-flex-row-container">
+                        <h6 style="padding-left: 40px;">Drag and drop items to reorder them on the course Navigation</h6>
+    
+        <div class="row">
+            <div class="col-md-6">
+                
+                <ul id="visibleItems" >
+                    <li class="list-group-item border-1 wd-navlistborder">Home<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Modules<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Piazza<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Zoom Meetings<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Assignments<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Quizzes<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Grades<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">People<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Panopto Video<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Chat<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Scorm<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Attendance<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Barnes and Noble Bookstore<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Digication<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Tophat<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Syllabus<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Perusall<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Microsoft Teams Meetings<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Fact Reporting and Photo Roster<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Progress Reports<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Microsoft Teams for Canvas<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">VHL Central<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">Credentials<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                    <li class="list-group-item border-1">iClicker<i class="fa-solid fa-ellipsis-vertical " style="color: #bfbfbf; float: right;" ></i></li>
+                </ul>
+            </div>
+        </div>
+                    </div>
+                </div>
+        </div>
+                <!-- profile end -->
+         
+            </div>
+            </div>
+            </div>
             
-<a href="/Kanbas/Courses/Settings/coursedetails/screen.html"><button >Course Details</Course></button></a>
-<a href="/Kanbas/Courses/Settings/screen.html"><button >Selections</Course></button></a>
-<a href="/Kanbas/Courses/Settings/navigation/screen.html"><button >Navigaiton</Course></button></a>
-<a href="/Kanbas/Courses/Settings/screen.html"><button >Apps</Course></button></a>
-<a href="/Kanbas/Courses/Settings/screen.html"><button >Feature options</Course></button></a>
-<a href="/Kanbas/Courses/Settings/screen.html"><button >Integrations</Course></button></a>
+        
+            
+     </body>
+    </html>
 
 
-            
-            Drag and drop items to reorder them on the course Navigaiton<br/>
-<table border="2">
-    <tr>
-        <td>home</td><br/>
-    </tr>
-    <tr><td>modules</td></tr>
-    <tr><td>piazza</td></tr>
-    <tr><td>mzoom meetings</td></tr>
-    <tr><td>assignments</td></tr>
-    <tr><td>quizzes</td></tr>
-    <tr><td>grades</td></tr>
-    <tr><td>people</td></tr>
-    <tr><td>panopto video</td></tr>
-</table>
-Drag items here to hhide them from students
-<table border="2">
-    <tr><td>chat</td></tr>
-    <tr><td>Scorm</td></tr>
-    <tr><td>attendance </td></tr>
-    <tr><td>barnes and noble bookstore</td></tr>
-    <tr><td>digication</td></tr>
-    <tr><td>tophat</td></tr>
-    <tr><td>syllabus</td></tr>
-    <tr><td>perusall</td></tr>
-    <tr><td>microsoft teams meetings</td></tr>
-    <tr><td>fact reporting and photo roster</td></tr>
-    <tr><td>progress reports </td></tr>
-    <tr><td>microsoft teams for canvas</td></tr>
-    <tr><td>VHL central</td></tr>
-    <tr><td>credentials</td></tr>
-    <tr><td>iClicker</td></tr>
-</table>
-            </td>
-    </tr>
-</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

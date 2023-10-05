@@ -1,4 +1,134 @@
-<label for ="assignmentName">Assignment name </label><br/>
+<div class="container-fluid mt-5">
+    <div class="row">
+        <html><head>
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+            <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+
+        </head>
+        <body>
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <span style="color:black; padding-left: 90%;" ><i class="fas fa-check-circle fa-lg" style="color: #30db24;" style="color: #2caf35;"></i>Published</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+            
+                        <!-- Assignment Name -->
+                        <div class="row mb-3">
+                            <label for="assignmentName" class="col-form-label col-md-12">Assignment Name</label>
+                            <div class="col-md-12">
+                                <input id="assignmentName" class="form-control" style="width: 100%;" placeholder="Assignment name" />
+                            </div>
+                        </div>
+            
+                        <!-- Description -->
+                        <div class="mb-3">
+                           
+                            <textarea cols="50" rows="5" class="form-control">assignment 1 to build kanbas</textarea>
+                        </div>
+            
+                        <!-- Points -->
+                        <div class="row mb-3">
+                            <label class="col-form-label col-md-3" style="text-align: right;">Points</label>
+                            <div class="col-md-7">
+                                <input value="100" type="number" class="form-control" max="100" min="10"/>
+                            </div>
+                        </div>
+            
+                        <!-- Assignment Group -->
+                        <div class="row mb-3">
+                            <label class="col-form-label col-md-3" style="text-align: right;">Assignment Group</label>
+                            <div class="col-md-7">
+                                <select class="form-control">
+                                    <option>assignments</option>
+                                </select>
+                            </div>
+                        </div>
+            
+                        <!-- Display Grade As -->
+                        <div class="row mb-3">
+                            <label class="col-form-label col-md-3" style="text-align: right;">Display Grade As</label>
+                            <div class="col-md-7">
+                                <select class="form-control">
+                                    <option>percentage</option>
+                                    <option>gpa</option>
+                                </select>
+                            </div>
+                        </div>
+            
+                        <!-- Submission Type -->
+                        <div class="row mb-3">
+                            <label class="col-form-label col-3" style="text-align: right;">Submission Type</label>
+                            <div class="col-7">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="textEntry">
+                                <label class="form-check-label" for="textEntry">
+                                    Text Entry
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="websiteUrl">
+                                <label class="form-check-label" for="websiteUrl">
+                                    Website URL
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="mediaRecording">
+                                <label class="form-check-label" for="mediaRecording">
+                                    Media Recording
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="fileUploads">
+                                <label class="form-check-label" for="fileUploads">
+                                    File Uploads
+                                </label>
+                            </div>
+                        </div>
+                        </div>
+            
+                      
+                        <!-- Assign To -->
+                        <div class="row mb-3">
+                            <label class="col-form-label col-md-3" style="text-align: right;">Assign To</label>
+                            <div class="col-md-7">
+                                <select class="form-control">
+                                    <option>everybody</option>
+                                </select>
+                            </div>
+                        </div>
+            
+                        <!-- Due Date -->
+                        <div class="row mb-3">
+                            <label class="col-form-label col-md-3" style="text-align: right;">Due Date</label>
+                            <div class="col-md-7">
+                                <span class="me-3 mt-3">Available From</span>
+                                <input type="date" min="2023-09-04" />
+                                <span class="me-3 mt-3">Until</span>
+                                <input type="date" min="2023-09-29" />
+                            </div>
+                        </div>
+            
+                        <!-- Buttons -->
+                        <div class="row">
+                        <div class="d-flex justify-content-start mt-3" style="padding: 1cm;">
+                            <a href="http://localhost:3000/Kanbas/Courses/Assignments/screen.html" class="btn" style="background-color: lightgray; border-color: black;" >Cancel</a>
+                            
+                        </div>
+                        <div class="d-flex justify-content-start mt-3" style="padding: 1cm;">
+                            <a href="http://localhost:3000/Kanbas/Courses/Assignments/screen.html" class="btn btn-success ms-2">Save</a>
+            
+                        </div>
+                    </div>
+                        
+                    </div>
+                </div>
+            </div>
+        
+          </body></html>
+
+<!-- <label for ="assignmentName">Assignment name </label><br/>
 <input id="assignmentName" placeholder="assignment name"/><br/>
 <h3>description</h3>
 <textarea cols="50" rows="5">assignment 1 to build kanbas</textarea>
@@ -39,4 +169,4 @@
 <input type="date" min="2023-09-29" /><br/>
 <a href ="http://localhost:3000/Kanbas/Courses/Assignments/screen.html"> <button type="button"><h3>cancel</h3></button></a></button>
 <a href ="http://localhost:3000/Kanbas/Courses/Assignments/screen.html"> <button type="button"><h3>save</h3></button></a></button>
-
+ -->

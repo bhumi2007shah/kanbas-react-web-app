@@ -1,0 +1,60 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    padding: 20px;
+}
+
+button {
+    margin-bottom: 10px;
+    
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+.listhome {
+    border:  color=black;
+    list-style-type: none;
+}
+.wd-Homecolorbg{
+    background-color:  rgb(210, 210, 210);
+}
+.wd-publishall{
+    color: black;
+   
+    /* border-width : thin;
+    border-style: solid;
+    border-color: black; */
+  color: black;
+}
+.wd-Homelist{
+    padding: 0.2cm ;
+}
+.wd-Homelistpad{
+    padding-left:30px;
+}
+.wd-Homelinkred{
+    color:red;
+}
+.wd-Homeliststyle{
+    list-style:none;
+}
+.wd-text-endHome{
+    text-align: end;
+}
+.wd-HomeBorder{
+    border-width : thin;
+    border-style: solid;
+    border-color: black;
+    margin:20px;
+    height: 2cm;
+
+}
+.wd-homeremovepad{
+    padding-left: 0px;
+}

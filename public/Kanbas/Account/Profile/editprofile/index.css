@@ -1,0 +1,53 @@
+/* Custom CSS for the Edit Profile form */
+
+h1, h4 {
+    font-weight: bold;
+}
+
+h1, h4, textarea, input[type="text"], input[type="url"], select {
+    margin-bottom: 10px;
+}
+
+textarea, input[type="text"], input[type="url"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+textarea {
+    display: block;
+}
+
+.btn-save-profile {
+    background-color: red;
+    color: white;
+}
+
+.float-end {
+    float: right;
+}
+
+.container {
+    padding: 15px;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.col-6 {
+    padding: 0 5px;
+}
+.form-container {
+    max-width: 600px;
+    margin: auto;
+    margin-left: 0;
+}
+/* Add more specific styling if needed */
+

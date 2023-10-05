@@ -1,0 +1,37 @@
+/* Set specific widths for course cards */
+
+/* Add white spacing between courses */
+.card {
+    margin: 10px; 
+    border: 2px solid black;
+    width: 250px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+
+/* Define button color */
+.btn-primary {
+    background-color: #1e5fa0; 
+    
+}
+
+/* Define button text color */
+.btn-primary:hover {
+    color: #ffffff;
+}
+.card-title{
+    color:#1e5fa0
+}
+.card-text{
+    color:grey;
+}
+.wd-Dcustomcol{
+   padding-left: 20px;
+    margin :20px;
+    width:250px;
+    
+}

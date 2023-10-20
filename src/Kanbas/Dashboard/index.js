@@ -8,7 +8,7 @@ function Dashboard() {
       <h1>Dashboard</h1>
       <hr/>
       <h4>published courses({courses.length})</h4>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="row row-cols-1 row-cols-md-2 g-4 newdash">
       <div className="wd-Dcustomcol">
         {courses.map((course, index) => (
             <div class="card">

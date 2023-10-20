@@ -9,7 +9,7 @@ import {FaDesktop} from"react-icons/fa";
 import {BiHelpCircle} from"react-icons/bi";
 import "./index.css";
 function KanbasNavigation() {
-  const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio","Help" ];
+  const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio","Help"];
   const linkToIconMap={
     Account: <FaUserAlt  id={"id1"}/>,
     Dashboard:<TfiDashboard classname="text-red "id={"id1"}/>,
@@ -19,6 +19,7 @@ function KanbasNavigation() {
     History:<GoHistory classname="fa-user "id={"id1"}/>,
     Studio:<FaDesktop classname="fa-user"id={"id1"}/>,
     Help:<BiHelpCircle classname="fa-user"id={"id1"}/>
+  
   };
   const { pathname } = useLocation();
   return (
@@ -34,6 +35,7 @@ function KanbasNavigation() {
         </Link>
       ))}
     </div>
+   
   );
 }
 export default KanbasNavigation;

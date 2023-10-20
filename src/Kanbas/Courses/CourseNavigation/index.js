@@ -11,7 +11,7 @@ function CourseNavigation() {
         <Link
           key={index}
           to={`/Kanbas/Courses/${courseId}/${link}`}
-          className={` nav-link-c text-red  ${pathname.includes(link) && "active"}`} 
+          className={` nav-link-c text-red a-active ${pathname.includes(link) && "a.active"}`} 
         
           >
         

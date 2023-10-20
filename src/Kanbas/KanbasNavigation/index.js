@@ -11,23 +11,24 @@ import "./index.css";
 function KanbasNavigation() {
   const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio","Help" ];
   const linkToIconMap={
-    Account: <FaUserAlt classname="fa-user nav-link-i"/>,
-    Dashboard:<TfiDashboard classname="text-red "/>,
-    Courses:<FaBook classname="fa-user"/>,
-    Calendar:<BsFillCalendar3WeekFill classname="fa-user "/>,
-    Inbox:<HiInbox classname="fa-user"/>,
-    History:<GoHistory classname="fa-user "/>,
-    Studio:<FaDesktop classname="fa-user"/>,
-    Help:<BiHelpCircle classname="fa-user"/>
+    Account: <FaUserAlt  id={"id1"}/>,
+    Dashboard:<TfiDashboard classname="text-red "id={"id1"}/>,
+    Courses:<FaBook classname="fa-user"id={"id1"}/>,
+    Calendar:<BsFillCalendar3WeekFill classname="fa-user "id={"id1"}/>,
+    Inbox:<HiInbox classname="fa-user"id={"id1"}/>,
+    History:<GoHistory classname="fa-user "id={"id1"}/>,
+    Studio:<FaDesktop classname="fa-user"id={"id1"}/>,
+    Help:<BiHelpCircle classname="fa-user"id={"id1"}/>
   };
   const { pathname } = useLocation();
   return (
-    <div className="sidebar   " >
+    
+    <div className="sidebar" >
       {links.map((link, index) => (
         <Link
           key={index}
           to={`/Kanbas/${link}`}
-          className={`sidebar   nav-link  ${pathname.includes(link) ? "active":"" } `}>
+          className={`   nav-link  ${pathname.includes(link) ? "active":"" } `}>
             {linkToIconMap[link] }
           {link}
         </Link>

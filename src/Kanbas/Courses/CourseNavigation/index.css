@@ -1,29 +1,31 @@
-.sidebar {
-    background-color: #000;
-    width: 100px;
-    margin-top: 0px; 
+.wd-course-navigation {
+    background-color: #ffffff;
+    width: 50px;
+   padding-left:2px;
+   
     height:fit-content;
     display: flex;
     flex-direction: column; 
     justify-content: left; /* Align items vertically in the center */
-    align-items: center;
+    align-items: left;
     padding-right: 0%;
-    padding-left:5px;
-    display: block;
-    list-style: none;
     margin-right: 0%;
 }
 
-.nav-link {
+.wd-course-navigation a{
     color: #fff !important;
-    padding-left: 0px !important; 
+    /* padding-left: 0px !important;  */
     margin: 5px 0 !important;
     font-size: 16px; /* Adjusted font size */
-    text-align: left;
-    width: 90px;
-    height: 70px;
+    text-align: left;  
     align-items: left;/* Display the icon as block element */
     display: block;
+    border-left: 2px;
+    border-left-color: black;
+    color: #f00 !important;
+    padding: 5px;
+    position: relative;
+    display:block;
 }
 
 .react-icon-custom { 
@@ -34,29 +36,26 @@
     font-size: 0.8cm; /* Increased icon size */
     text-align: center;
 }
-.nav-link.active {
+.wd-course-navigation a.active {
     background-color: #fff;
     color: #f00 !important;
-    width:90px;
-    padding-left: none;
+    width:100px;
+    border-left: 2px;
+    border-left-color: solid black;
+    
+    
     
 }
 
 .text-red {
     color: #f00 !important;
+    border-left-color: black;
+    padding: 5px;
+    position: relative;
+    display:block;
 }
 
 .fa-user {
     color: #fff !important;
 
-}
-#id1{
-    margin-bottom: 5px ; /* Added margin below the icon */
-     margin :color= none; 
-    display: block; 
-    align-items: center;/* Display the icon as block element */
-    font-size: 0.8cm; /* Increased icon size */
-    text-align:center;
-    color: #f00 !important;
-    margin-top:5px;
 }

@@ -74,9 +74,9 @@ function Assignments() {
           </Link>
           
         ))}
-         <button className="btn btn-danger ms-2" onClick={() => handleDelete(assignment)}>
+         {/* <button className="btn btn-danger ms-2" >
               Delete
-            </button>
+            </button> */}
       </div>
     </div>
   );

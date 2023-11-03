@@ -25,6 +25,7 @@ function KanbasNavigation() {
   return (
     
     <div className="sidebar" >
+        <img src="/iMAGE/northeastern.png" style={{width:90}}></img>
       {links.map((link, index) => (
         <Link
           key={index}

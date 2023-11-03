@@ -1,4 +1,4 @@
-.wd-course-navigation {
+.sidebar-c {
     background-color: #ffffff;
     width: 50px;
    padding-left:2px;
@@ -12,7 +12,7 @@
     margin-right: 0%;
 }
 
-.wd-course-navigation a{
+.nav-link-c{
     color: #fff !important;
     /* padding-left: 0px !important;  */
     margin: 5px 0 !important;
@@ -36,12 +36,12 @@
     font-size: 0.8cm; /* Increased icon size */
     text-align: center;
 }
-.wd-course-navigation a.active {
+.a-active {
     background-color: #fff;
     color: #f00 !important;
     width:100px;
     border-left: 2px;
-    border-left-color: solid black;
+    border-left-color: black;
     
     
     
@@ -53,6 +53,7 @@
     padding: 5px;
     position: relative;
     display:block;
+ 
 }
 
 .fa-user {

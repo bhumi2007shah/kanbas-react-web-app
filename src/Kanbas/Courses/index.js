@@ -6,11 +6,12 @@ import Home from "./Home";
 import Assignments from"./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
-function Courses() {
+function Courses({ courses }) {
+
   const { courseId } = useParams();
   const {pathname}=useLocation();
-  const [t, kanbas, courses, id, screen]=pathname.split("/");
-  const course = db.courses.find((course) => course._id === courseId);
+  const [t, kanbas,  id, screen]=pathname.split("/");
+  const course = courses.find((course) => course._id === courseId);
   return (
     <div>
         

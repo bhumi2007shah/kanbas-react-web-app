@@ -5,16 +5,16 @@ function Modules() {
   return (
     <div>
     
-    <button  className="btn" id={"id4"}>
+    <button   >
         Save
       </button>
-      <button  className="btn ">
+      <button  >
         view progress
       </button>
-      <button  className="btn ">
+      <button  >
        publish all
       </button>
-      <button  className="btn ">
+      <button  >
         + module
       </button>
     

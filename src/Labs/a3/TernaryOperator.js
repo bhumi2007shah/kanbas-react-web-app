@@ -7,4 +7,5 @@ function TernaryOperator(){
     </div>
  )
 
-}export default TernaryOperator
+}
+export default TernaryOperator

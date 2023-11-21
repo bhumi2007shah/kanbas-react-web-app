@@ -9,11 +9,13 @@ import Kanbas from "./Kanbas/index"
 import {HashRouter} from "react-router-dom";
 import {Routes, Route, Navigate} from "react-router";
 function App() {
+   const screen = "Labs";
+
    return (
       <HashRouter>
       <div>
    <Routes>
-      <Route path="/" element={<Navigate to="Kanbas"/>}/>
+      <Route path="/" element={<Navigate to="Labs"/>}/>
       <Route path="/Labs/*"   element={<Labs/>}/>
       <Route path="/hello"    element={<HelloWorld/>}/>
       <Route path="/kanbas/*" element={<Kanbas/>}/>

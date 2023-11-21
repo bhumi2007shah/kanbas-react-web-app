@@ -7,16 +7,17 @@ import { Provider } from "react-redux";
 
 function Labs() {
   const { pathname } = useLocation();
+
   // const { pathname } = location;
   return (
     <Provider store={store}>
       <div className="container">
         <h1>Labs</h1>
-        <div className="nav nav-pills">
+        <div className="nav nav-pills" >
           <Link
             to="/Labs/a3"
             className={`nav-link ${pathname.includes("a3") ? "active" : ""}`}
-          >
+          > 
             Assignment 3
           </Link>
           <Link

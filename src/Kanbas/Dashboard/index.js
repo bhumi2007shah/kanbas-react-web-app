@@ -5,21 +5,18 @@ import { Link } from "react-router-dom";
 function Dashboard({ courses, course, setCourse, addNewCourse,
   deleteCourse, updateCourse }
 ) {
-    
-   
-    
+
     return (
         <div>
           <h1>Dashboard</h1>
           <h4>published courses({courses.length})</h4>
           <input value={course.name} className="form-control, w-50" 
              onChange={(e) => setCourse({ ...course, name: e.target.value }) } />
-    
-
-
           <button  onClick={addNewCourse} style={{float: "inline-end", backgroundColor:"green",color:"white"}}>
         Add
       </button>
+      <input value={course.name} className="form-control, w-50" 
+             onChange={(e) => updateCourse({ ...course, name: e.target.value }) } />
       <button onClick={updateCourse} style={{float: "inline-end", backgroundColor:"blue",color:"white"}}>
         Update
       </button>
@@ -63,25 +60,3 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
     
 
 export default Dashboard;
-//   return (
-//     <div>
-//       <h1>Dashboard</h1>
-//       <div className="list-group">
-//         {courses.map((course, index) => (
-//           <Link
-//             key={index}
-//             to={`/Kanbas/Courses/${course._id}`}
-//             className="list-group-item"
-//           >
-//             {course.name}
-//           </Link>
-//         ))}
-//       </div>
-// //       <pre>
-// //         <code>{JSON.stringify(courses, null, 2)}</code>
-// //       </pre>
-// //     
-// //   );
-// // }
-
-// // export default Dashboard;

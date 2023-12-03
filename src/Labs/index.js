@@ -16,19 +16,19 @@ function Labs() {
         <div className="nav nav-pills" >
           <Link
             to="/Labs/a3"
-            className={`nav-link ${pathname.includes("a3") ? "active" : ""}`}
+            className={`nav-link ${pathname.includes("a3") ? "active" : ""}`}style={{ color: "black", backgroundColor: "black" }}
           > 
             Assignment 3
           </Link>
           <Link
             to="/Labs/a4"
-            className={`nav-link ${pathname.includes("a4") ? "active" : ""}`}
+            className={`nav-link ${pathname.includes("a4") ? "active" : ""}`} style={{ color: "black", backgroundColor: "black" }}
           >
             Assignment 4
           </Link>
           <Link
             to="/Labs/a5"
-            className={`nav-link ${pathname.includes("a5") ? "active" : ""}`}
+            className={`nav-link ${pathname.includes("a5") ? "active" : ""}`}style={{ color: "black", backgroundColor: "black" }}
           >
             Assignment 5
           </Link>

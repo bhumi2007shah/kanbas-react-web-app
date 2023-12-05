@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import * as client from "./client";
+import { Link } from "react-router-dom";
 function Account() {
   const [account, setAccount] = useState(null);
   const navigate = useNavigate();

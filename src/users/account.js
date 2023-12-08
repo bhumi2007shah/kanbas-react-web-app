@@ -4,11 +4,14 @@ import { useNavigate } from "react-router-dom";
 import * as client from "./client";
 import { Link } from "react-router-dom";
 function Account() {
-  const [account, setAccount] = useState(null);
+  const [account, setAccount] = useState();
   const navigate = useNavigate();
   const fetchAccount = async () => {
-    const account = await client.account();
-    setAccount(account);
+    try{const account = await client.account();
+      setAccount(account);}
+      catch (error) {
+        console.error('Error fetching account:', error);
+    }
   };
   useEffect(() => {
     fetchAccount();

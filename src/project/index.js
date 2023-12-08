@@ -16,6 +16,7 @@ function Project() {
           <Route path="/signin" element={<Signin />} />
           <Route path="/account" element={<Account />} />
           <Route path="/admin/users" element={<UserTable />} />
+          <Route path="/account/:id" element={<Account />} />
 
         </Routes>
       </div>

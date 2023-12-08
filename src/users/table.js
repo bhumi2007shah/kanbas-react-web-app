@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BsFillCheckCircleFill, BsTrash3Fill, BsPlusCircleFill, BsPencil }
+import { BsFillCheckCircleFill, BsTrash3Fill, BsPlusCircleFill,BsPencil }
   from "react-icons/bs";
 import * as client from "./client";
 function UserTable() {
@@ -29,6 +29,14 @@ function UserTable() {
     try {
       const status = await client.updateUser(user);
       setUsers(users.map((u) => (u._id === user._id ? user : u)));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  const deleteUser = async (user) => {
+    try {
+      await client.deleteUser(user);
+      setUsers(users.filter((u) => u._id !== user._id));
     } catch (err) {
       console.log(err);
     }
@@ -70,7 +78,9 @@ function UserTable() {
               <BsPlusCircleFill onClick={createUser}/>
             </td>
             <td className="text-nowrap">
-   
+    <button className="btn btn-danger me-2">
+      <BsTrash3Fill onClick={() => deleteUser(user)} />
+    </button>
     <button className="btn btn-warning me-2">
       <BsPencil onClick={() => selectUser(user)} />
     </button>
@@ -82,7 +92,10 @@ function UserTable() {
         <tbody>
           {users.map((user) => (
             <tr key={user._id}>
-              <td>{user.username}</td>
+              <Link to={`/project/account/${user._id}`}>
+          {user.username}
+        </Link>
+
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
             </tr>))}
